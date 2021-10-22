@@ -1,2 +1,2 @@
 # master-kschool
-Repositorio máster data science Kschool
+Repository master data science Kschool
