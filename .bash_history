@@ -305,3 +305,93 @@ R
 cd Descargas/
 sudo dpkg -i rstudio-2021.09.0-351-amd64.deb 
 rstudio 
+sudo apt-get install terminator
+zsh
+wget -O - https://dbeaver.io/debs/dbeaver.gpg.key | sudo apt-key add -
+echo "deb https://dbeaver.io/debs/dbeaver-ce /" | sudo tee /etc/apt/sources.list.d/dbeaver.list
+sudo apt-get update
+sudo apt-get install dbeaver-ce 
+ll
+ll -a
+alias
+echo $EDITOR
+vim -n .bashrc 
+source .bashrc 
+echo $EDITOR
+cp .bash_history master/repository/master-kschool/
+cd master/
+ll
+mv repository repositories
+cd repositories/
+ll
+mv master-kschool first_repository
+cd first_repository/
+ll
+git status
+git remote -v
+git add .bash_history 
+git status
+find . -name "*gitconfig*"
+ll
+vim -n ~/.gitconfig 
+cat .bash_history 
+cat .bash_history | wc -l
+sudo mysql_secure_installation
+mysql -u root -p
+mysql -u root -p -h 127.0.0.1
+sudo mysql
+mysql -u root -p -h 127.0.0.1
+sudo mysql
+mysql -u root -p -h 127.0.0.1
+git status
+git push
+git commit -m "History up"
+git push
+sudo apt install php-cli unzip
+cd
+curl -sS https://getcomposer.org/installer -o composer-setup.php
+HASH=`curl -sS https://composer.github.io/installer.sig`
+echo $HASH
+php -r "if (hash_file('SHA384', 'composer-setup.php') === '$HASH') { echo 'Installer verified'; } else { echo 'Installer corrupt'; unlink('composer-setup.php'); } echo PHP_EOL;"
+sudo php composer-setup.php --install-dir=/usr/local/bin --filename=composer
+composer --version
+composer
+php --version
+cd master/repositories/first_repository/
+ll
+head --help
+head -n -30 .bash_history 
+cat -n .bash_history 
+head -30 .bash_history 
+tail -3 .bash_history 
+tail -n -3 .bash_history 
+tail -n +3 .bash_history 
+type ll
+sudo apt-get install php8.0-xdebug 
+seq 1 3 50
+seq 0 3 30
+seq 0 9 90
+sudo apt-get install docker
+seq 0 9 90;seq 0 3 90
+seq 0 9 90;seq 0 3 90 | uniq
+seq 0 9 90;seq 0 3 90 | sort | uniq
+seq 0 9 90 | seq 0 3 90 | sort | uniq
+seq 0 3 10 | seq 0 3 10 | sort | uniq
+seq 0 3 10 | seq 0 3 10 
+seq 0 3 10;seq 0 3 10 | sort | uniq
+seq 0 9 90 | seq 0 3 90 | sort -n | uniq
+seq 0 9 90 | seq 0 3 90
+seq 0 9 90;seq 0 3 90 | sort -n | uniq
+seq 0 9 90;seq 0 3 90 | sort -un
+seq 09 3 0 | sort -un
+seq 90 3 0 | sort -un
+sudo curl -L "https://github.com/docker/compose/releases/download/1.29.2/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo ln -s /usr/local/bin/docker-compose /usr/bin/docker-compose
+docker --version
+docker-compose --version
+sudo apt-get install docker
+docker
+sudo apt  install docker.io  
+docker --version
+exit
